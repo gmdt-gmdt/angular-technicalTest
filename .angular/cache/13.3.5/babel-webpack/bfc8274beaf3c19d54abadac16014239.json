@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var MALE = \"Male\";\nexport var FEMALE = \"Female\";\nexport var MALE_FR = \"Homme\";\nexport var FEMALE_FR = \"Femme\";","map":null,"metadata":{},"sourceType":"module"}
