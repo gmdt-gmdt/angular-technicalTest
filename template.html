@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+  </head>
+  <body oncontextmenu="return false" style="background-color: #eee">
+    <section class="py-5 px-4 mb-4" style="">
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col col-lg-9 col-xl-9">
+          <div class="card rounded-3">
+            <div class="card-body p-4">
+              <h4 class="text-center my-3 pb-3">To Do App</h4>
+
+              <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                <div class="col-10">
+                  <div class="form-outline">
+                    <input type="text" placeholder="Enter task here" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-2">
+                  <button type="submit" class="btn btn-primary w-100">Save</button>
+                </div>
+              </form>
+
+              <table class="table mb-4">
+                <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">task</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i...</td>
+                    <td>Idle</td>
+                    <td>
+                      <button type="submit" class="btn btn-danger">Delete</button>
+                      <button type="submit" class="btn btn-success ms-1">Start</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Renew car insurance</td>
+                    <td>In progress</td>
+                    <td>
+                      <button type="submit" class="btn btn-danger">Delete</button>
+                      <button type="submit" class="btn btn-success ms-1">Finished</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><s>Sign up for online course</s></td>
+                    <td>Done</td>
+                    <td>
+                      <button type="submit" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
