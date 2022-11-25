@@ -19,11 +19,12 @@ export class TaskService {
     return this.http.post(`${this.apiUrl}`, data);
   }
 
-  getTasklist() {
-    return this.http.get(`${this.apiUrl}`);
+  getTasklist(): Observable<Task[]> {
+    return this.http.get<Task[]>(this.apiUrl);
   }
 
   updateTask(id: any, data: any): Observable<any> {
+    console.log("updateTask',data: " + JSON.stringify(data));
     return this.http.put(`${this.apiUrl}/${id}`, data, {
       headers: this.headers,
     });

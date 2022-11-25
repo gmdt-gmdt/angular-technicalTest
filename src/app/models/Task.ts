@@ -1,11 +1,11 @@
 export class Task {
   id: number | undefined;
-  status: TaskSatus = TaskSatus.IDLE;
+  status: TaskStatus = TaskStatus.IDLE;
   task: string = "";
 }
 
-export enum TaskSatus {
-  IDLE, 
-  InProgress, 
-  Done,
+export enum TaskStatus {
+  IDLE = "IDLE",
+  IN_PROGRESS = "IN_PROGRESS",
+  DONE = "DONE",
 }

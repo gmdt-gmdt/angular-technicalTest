@@ -1,22 +1,20 @@
-import { TodoStatus } from './../../core/interfaces/todo.interface';
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from "@angular/core";
+import { TaskStatus } from "@app/models/Task";
 
 @Pipe({
-  name: 'status'
+  name: "taskStatus",
 })
 export class StatusPipe implements PipeTransform {
-
-  transform(value: TodoStatus, ...args: unknown[]): string {
-    switch(value) {
-      case 'IDLE':
-        return 'Idle';
-      case 'IN_PROGRESS':
-        return 'In progress';
-      case 'DONE':
-        return 'Done';
+  transform(value: TaskStatus): string {
+    switch (value) {
+      case "IDLE":
+        return "Idle";
+      case "IN_PROGRESS":
+        return "In progress";
+      case "DONE":
+        return "Done";
       default:
-        return '';
+        return "";
     }
   }
-
 }

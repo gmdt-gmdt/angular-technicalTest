@@ -1,12 +1,27 @@
-<form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2"
-  [formGroup]="taskForm" (ngSubmit)="onAddTask()">
+<form
+  class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2"
+  [formGroup]="taskForm"
+  (ngSubmit)="onAddTask()"
+>
   <div class="col-10">
     <div class="form-outline">
-      <input type="text" placeholder="Enter task here" class="form-control" formControlName="task" ngClass="{'ng-invalid': !taskForm.valid}"/>
+      <input
+        type="text"
+        placeholder="Enter task here"
+        class="form-control"
+        formControlName="task"
+        ngClass="{'ng-invalid': !taskForm.valid}"
+      />
     </div>
   </div>
 
   <div class="col-2">
-    <button type="submit" class="btn btn-primary w-100" [disabled]="!taskForm.valid">Save</button>
+    <button
+      type="submit"
+      class="btn btn-primary w-100"
+      [disabled]="!taskForm.valid"
+    >
+      Save
+    </button>
   </div>
 </form>

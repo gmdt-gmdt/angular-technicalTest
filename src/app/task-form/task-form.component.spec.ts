@@ -1,23 +1,24 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from "@angular/common/http";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { TaskFormComponent } from './task-form.component';
+import { TaskFormComponent } from "./task-form.component";
 
-describe('TaskFormComponent', () => {
+describe("TaskFormComponent", () => {
   let component: TaskFormComponent;
   let fixture: ComponentFixture<TaskFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TaskFormComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientModule],
+      declarations: [TaskFormComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TaskFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

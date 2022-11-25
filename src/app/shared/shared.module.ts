@@ -1,12 +1,9 @@
-import { StatusPipe } from './pipes/status.pipe';
-import { NgModule } from '@angular/core';
+import { StatusPipe } from "./pipes/status.pipe";
+import { NgModule } from "@angular/core";
+import { StrikeTextPipe } from "./pipes/strike-text.pipe";
 
 @NgModule({
-    declarations: [
-        StatusPipe
-    ],
-    exports: [
-        StatusPipe
-    ],
+  declarations: [],
+  exports: [],
 })
-export class SharedModule { }
+export class SharedModule {}
