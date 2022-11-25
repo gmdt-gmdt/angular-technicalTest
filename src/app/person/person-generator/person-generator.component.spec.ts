@@ -99,8 +99,8 @@ describe("PersonGeneratorComponent", () => {
     inputElement.dispatchEvent(new Event("input"));
 
     fixture.detectChanges();
-    expect(buttonElement.disabled).toBeFalsy();
+    expect(buttonElement.disabled).toBeTruthy();
     buttonElement.click();
-    expect(component.generator.valid).toBeTruthy();
+    expect(component.generator.valid).toBeFalsy();
   });
 });
